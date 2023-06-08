@@ -46,7 +46,7 @@ let
 
   procfileScripts = {
     honcho = ''
-      ${pkgs.honcho}/bin/honcho start -f ${config.procfile} --env ${config.procfileEnv} & 
+      ${pkgs.honcho}/bin/honcho start --no-colour -f ${config.procfile} --env ${config.procfileEnv} & 
     '';
 
     overmind = ''
